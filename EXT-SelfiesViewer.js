@@ -6,8 +6,8 @@
 
 Module.register("EXT-SelfiesViewer", {
   defaults: {
-    moduleHeight: 250,
     moduleWidth: 300,
+    moduleHeight: 250,
     displayDelay: 1000 * 10,
     displayBackground: true,
     sortBy: "new" // old or random

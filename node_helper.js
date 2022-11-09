@@ -103,6 +103,7 @@ module.exports = NodeHelper.create({
   checkValidImageFileExtension: function(filename) {
     var found = false
     if (filename.toLowerCase().endsWith("jpg")) found = true
+    if (filename.toLowerCase().endsWith("jpeg")) found = true
     return found
   },
 });
