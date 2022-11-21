@@ -6,6 +6,7 @@
 
 Module.register("EXT-SelfiesViewer", {
   defaults: {
+    debug: false,
     moduleWidth: 300,
     moduleHeight: 250,
     displayDelay: 1000 * 10,
