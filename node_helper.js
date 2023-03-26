@@ -1,9 +1,9 @@
 /**************************
-*  EXT-SelfiesViewer v1.0 *
+*  EXT-SelfiesViewer v1.1 *
 *  node_helper            *
 *                         *
 *  Bugsounet              *
-*  11/2022                *
+*  03/2023                *
 ***************************/
 
 var NodeHelper = require("node_helper");
@@ -105,5 +105,5 @@ module.exports = NodeHelper.create({
     if (filename.toLowerCase().endsWith("jpg")) found = true
     if (filename.toLowerCase().endsWith("jpeg")) found = true
     return found
-  },
+  }
 });

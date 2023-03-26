@@ -75,15 +75,16 @@ Module.register("EXT-SelfiesViewer", {
 
   notificationReceived: function(noti, payload, sender) {
     switch(noti) {
-      case "DOM_OBJECTS_CREATED":
-        this.sendSocketNotification('INIT', this.config)
-        break
-      case "GAv5_READY":
-        if (sender.name == "MMM-GoogleAssistant") this.sendNotification("EXT_HELLO", this.name)
+      case "GW_READY":
+        if (sender.name == "Gateway") {
+          this.sendSocketNotification('INIT', this.config)
+          this.ready= true
+          this.sendNotification("EXT_HELLO", this.name)
+        }
         break
       case "EXT_SELFIES-CLEAN_STORE":
       case "EXT_SELFIES-RESULT":
-        this.sendSocketNotification("SCAN")
+        if (this.ready) this.sendSocketNotification("SCAN")
         break
     }
   },
@@ -109,6 +110,5 @@ Module.register("EXT-SelfiesViewer", {
       current.classList.add("animated")
     }
     hidden.src = url
-  },
-
+  }
 })
