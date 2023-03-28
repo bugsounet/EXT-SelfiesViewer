@@ -1,12 +1,10 @@
 # EXT-SelfiesViewer
 
--- Extented for `MMM-GoogleAssistant` v5.x --
+-- Extented for `MMM-GoogleAssistant` --
 
 EXT-SelfiesViewer is a plugin of EXT-Selfies<br>
 
 It allows to display your selfie take from EXT-Selfies plugin
-
-This module is an Extented for `MMM-GoogleAssistant` v5.x, you can naturally use it as a simple module !<br>
 
 ## Installation / update / configuration
 
