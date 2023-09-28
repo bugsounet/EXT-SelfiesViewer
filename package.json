@@ -1,7 +1,7 @@
 {
   "name": "EXT-SelfiesViewer",
-  "version": "1.1.1",
-  "rev": "230723",
+  "version": "1.1.2",
+  "rev": "230929",
   "description": "view selfies from EXT-Selfies",
   "main": "EXT-SelfiesViewer.js",
   "scripts": {
