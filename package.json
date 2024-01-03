@@ -1,7 +1,7 @@
 {
   "name": "EXT-SelfiesViewer",
-  "version": "1.1.2",
-  "rev": "231001",
+  "version": "1.2.0",
+  "rev": "240103",
   "description": "view selfies from EXT-Selfies",
   "main": "EXT-SelfiesViewer.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://wiki.bugsounet.fr",
   "dependencies": {
-    "esbuild": "^0.19.4",
+    "esbuild": "^0.19.11",
     "glob": "^10.3.10"
   }
 }
